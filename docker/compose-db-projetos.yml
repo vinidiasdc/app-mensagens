@@ -1,0 +1,20 @@
+name: projetos-databases
+
+services:
+  db-mensagens:
+    container_name: db-mensagens
+    image: postgres:18.2-bookworm
+    restart: unless-stopped
+    shm_size: 1024mb
+    ports:
+      - 5010:5432
+    environment:
+      TZ: America/Sao_Paulo
+      PGTZ: America/Sao_Paulo
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: admin123
+      PGDATA: /var/lib/postgresql/data/pgdata
+    volumes:
+      - C:/dados-projetos-pessoais/pg18:/var/lib/postgresql/data
+      - ./postgresql.conf:/etc/postgresql/postgresql.conf
+    command: postgres -c 'config_file=/etc/postgresql/postgresql.conf'
