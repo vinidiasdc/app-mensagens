@@ -1,24 +1,28 @@
-﻿using Microsoft.AspNetCore.Authorization;
+﻿using ChatServer.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.SignalR;
 
 namespace ChatServer.Hubs;
 
 [Authorize]
-public class ChatHub : Hub
+public class ChatHub(ILogger<ChatHub> logger) : Hub
 {
-    public async Task SendMessage(string mensagem)
+    public async Task SendMessage(ModeloMensagem mensagem)
     {
-        string usuario = Context.User?.Identity?.Name ?? throw new ApplicationException("Sem usuário");
-        await Clients.All.SendAsync("ReceberMensagem", usuario, mensagem);
+        string remetenteId = Context.UserIdentifier!;
+
+        await Clients.Users(mensagem.DestinatarioId, remetenteId)
+                     .SendAsync("ReceberMensagem", remetenteId, mensagem.Texto);
     }
 
     public override async Task OnConnectedAsync()
     {
-        await Clients.Caller.SendAsync("ReceberMensagem", "Server", "Bem vindo ao SignalR Chat!");
+        await base.OnConnectedAsync();
+        logger.LogInformation("Usuário conectado: {Login} | ID: {Id}", Context.User!.Identity!.Name, Context.UserIdentifier);
     }
 
     public override async Task OnDisconnectedAsync(Exception? exception)
     {
-        await Clients.All.SendAsync("ReceberMensagem", "Server", "Um usuário se desconectou.");
+        await base.OnDisconnectedAsync(exception);
     }
 }

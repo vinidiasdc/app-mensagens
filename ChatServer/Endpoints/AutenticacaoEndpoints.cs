@@ -30,8 +30,8 @@ public static class AutenticacaoEndpoints
 
             Claim[] claims =
             [
-                new(JwtRegisteredClaimNames.Sub, requisicao.Login),
-                new(ClaimTypes.Name, requisicao.Login)
+                new(ClaimTypes.NameIdentifier, usuario.Id.ToString()),
+                new(ClaimTypes.Name, usuario.Login)
             ];
 
             SymmetricSecurityKey signingKey = new(Encoding.UTF8.GetBytes(jwtKey));
