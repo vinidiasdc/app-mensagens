@@ -1,0 +1,46 @@
+[
+  {
+    "ContainingType": "Chat.API.Apresentacao.Endpoints.AutenticacaoEndpoints\u002B\u003C\u003Ec",
+    "Method": "\u003CAdicioneEndpointsAutenticacao\u003Eb__0_1",
+    "RelativePath": "autenticacao/cadastro",
+    "HttpMethod": "POST",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "requisicao",
+        "Type": "Chat.API.Dominio.Dtos.Requisicoes.CadastroUsuarioRequisicao",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Chat.API.Apresentacao.Endpoints.AutenticacaoEndpoints\u002B\u003C\u003Ec",
+    "Method": "\u003CAdicioneEndpointsAutenticacao\u003Eb__0_0",
+    "RelativePath": "autenticacao/login",
+    "HttpMethod": "POST",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "requisicao",
+        "Type": "Chat.API.Dominio.Dtos.Requisicoes.ConsultaUsuarioRequisicao",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  }
+]

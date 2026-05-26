@@ -1,0 +1,16 @@
+C:\projetos-pessoais\app-mensagens\chat_server\Aplicacao\bin\Debug\net10.0\Chat.Aplicacao.deps.json
+C:\projetos-pessoais\app-mensagens\chat_server\Aplicacao\bin\Debug\net10.0\Chat.Aplicacao.dll
+C:\projetos-pessoais\app-mensagens\chat_server\Aplicacao\bin\Debug\net10.0\Chat.Aplicacao.pdb
+C:\projetos-pessoais\app-mensagens\chat_server\Aplicacao\bin\Debug\net10.0\Chat.Dominio.dll
+C:\projetos-pessoais\app-mensagens\chat_server\Aplicacao\bin\Debug\net10.0\Chat.Dominio.pdb
+C:\projetos-pessoais\app-mensagens\chat_server\Aplicacao\obj\Debug\net10.0\Chat.Aplicacao.csproj.AssemblyReference.cache
+C:\projetos-pessoais\app-mensagens\chat_server\Aplicacao\obj\Debug\net10.0\Chat.Aplicacao.GeneratedMSBuildEditorConfig.editorconfig
+C:\projetos-pessoais\app-mensagens\chat_server\Aplicacao\obj\Debug\net10.0\Chat.Aplicacao.AssemblyInfoInputs.cache
+C:\projetos-pessoais\app-mensagens\chat_server\Aplicacao\obj\Debug\net10.0\Chat.Aplicacao.AssemblyInfo.cs
+C:\projetos-pessoais\app-mensagens\chat_server\Aplicacao\obj\Debug\net10.0\Chat.Aplicacao.csproj.CoreCompileInputs.cache
+C:\projetos-pessoais\app-mensagens\chat_server\Aplicacao\obj\Debug\net10.0\Chat.Aplicacao.sourcelink.json
+C:\projetos-pessoais\app-mensagens\chat_server\Aplicacao\obj\Debug\net10.0\Chat.Apl.5A14870B.Up2Date
+C:\projetos-pessoais\app-mensagens\chat_server\Aplicacao\obj\Debug\net10.0\Chat.Aplicacao.dll
+C:\projetos-pessoais\app-mensagens\chat_server\Aplicacao\obj\Debug\net10.0\refint\Chat.Aplicacao.dll
+C:\projetos-pessoais\app-mensagens\chat_server\Aplicacao\obj\Debug\net10.0\Chat.Aplicacao.pdb
+C:\projetos-pessoais\app-mensagens\chat_server\Aplicacao\obj\Debug\net10.0\ref\Chat.Aplicacao.dll

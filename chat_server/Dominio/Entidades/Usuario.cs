@@ -1,0 +1,10 @@
+namespace Chat.API.Dominio.Entidades;
+
+public class Usuario(string nome, string login, string senha)
+{
+    public Guid Id { get; set; } = Guid.NewGuid();
+    public string Nome { get; set; } = nome;
+    public string Login { get; set; } = login;
+    public string Senha { get; set; } = senha;
+    public string? TokenJwt { get; set; }
+};

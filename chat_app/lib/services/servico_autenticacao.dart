@@ -1,9 +1,10 @@
+import 'package:chat_app/data/resposta_token.dart';
 import 'package:dio/dio.dart';
-import '../ambiente_urls.dart';
-import '../data/resposta_token.dart';
+
+const _urlBase = String.fromEnvironment('URL_BASE', defaultValue: 'http://localhost:5000');
 
 class ServicoAutenticacao {
-  final Dio _dio = Dio(BaseOptions(baseUrl: urlChatApi));
+  final Dio _dio = Dio(BaseOptions(baseUrl: _urlBase));
 
   Future<RespostaToken> login(String login, String senha) async {
     final resposta = await _dio.post(

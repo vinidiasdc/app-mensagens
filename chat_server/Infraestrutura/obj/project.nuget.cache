@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "YnE73+a4jk4=",
+  "success": true,
+  "projectFilePath": "C:\\projetos-pessoais\\app-mensagens\\chat_server\\Infraestrutura\\Chat.Infraestrutura.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Vinicius Dias\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\10.0.0\\microsoft.extensions.dependencyinjection.abstractions.10.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

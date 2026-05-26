@@ -1,0 +1,12 @@
+C:\projetos-pessoais\app-mensagens\chat_server\Dominio\bin\Debug\net10.0\Chat.Dominio.deps.json
+C:\projetos-pessoais\app-mensagens\chat_server\Dominio\bin\Debug\net10.0\Chat.Dominio.dll
+C:\projetos-pessoais\app-mensagens\chat_server\Dominio\bin\Debug\net10.0\Chat.Dominio.pdb
+C:\projetos-pessoais\app-mensagens\chat_server\Dominio\obj\Debug\net10.0\Chat.Dominio.GeneratedMSBuildEditorConfig.editorconfig
+C:\projetos-pessoais\app-mensagens\chat_server\Dominio\obj\Debug\net10.0\Chat.Dominio.AssemblyInfoInputs.cache
+C:\projetos-pessoais\app-mensagens\chat_server\Dominio\obj\Debug\net10.0\Chat.Dominio.AssemblyInfo.cs
+C:\projetos-pessoais\app-mensagens\chat_server\Dominio\obj\Debug\net10.0\Chat.Dominio.csproj.CoreCompileInputs.cache
+C:\projetos-pessoais\app-mensagens\chat_server\Dominio\obj\Debug\net10.0\Chat.Dominio.sourcelink.json
+C:\projetos-pessoais\app-mensagens\chat_server\Dominio\obj\Debug\net10.0\Chat.Dominio.dll
+C:\projetos-pessoais\app-mensagens\chat_server\Dominio\obj\Debug\net10.0\refint\Chat.Dominio.dll
+C:\projetos-pessoais\app-mensagens\chat_server\Dominio\obj\Debug\net10.0\Chat.Dominio.pdb
+C:\projetos-pessoais\app-mensagens\chat_server\Dominio\obj\Debug\net10.0\ref\Chat.Dominio.dll

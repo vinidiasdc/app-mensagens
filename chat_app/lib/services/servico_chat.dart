@@ -1,7 +1,9 @@
 import 'dart:async';
+import 'package:chat_app/data/mensagem.dart';
 import 'package:signalr_netcore/signalr_client.dart';
-import '../ambiente_urls.dart';
-import '../data/mensagem.dart';
+
+
+const _urlBase = String.fromEnvironment('URL_BASE', defaultValue: 'http://localhost:5000');
 
 class ServicoChat {
   HubConnection? _hub;
@@ -12,7 +14,7 @@ class ServicoChat {
   Future<void> conectar(String token) async {
     _hub = HubConnectionBuilder()
         .withUrl(
-          '$urlChatApi/chat',
+          '$_urlBase/chat',
           options: HttpConnectionOptions(
             accessTokenFactory: () async => token,
           ),

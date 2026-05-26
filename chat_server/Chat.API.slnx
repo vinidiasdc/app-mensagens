@@ -1,0 +1,14 @@
+<Solution>
+  <Folder Name="/Apresentacao/">
+    <Project Path="Apresentacao/Chat.API.csproj" />
+  </Folder>
+  <Folder Name="/Aplicacao/">
+    <Project Path="Aplicacao/Chat.Aplicacao.csproj" />
+  </Folder>
+  <Folder Name="/Dominio/">
+    <Project Path="Dominio/Chat.Dominio.csproj" />
+  </Folder>
+  <Folder Name="/Infraestrutura/">
+    <Project Path="Infraestrutura/Chat.Infraestrutura.csproj" />
+  </Folder>
+</Solution>
