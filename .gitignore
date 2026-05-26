@@ -1,8 +1,9 @@
-﻿################################################################################
-# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
-################################################################################
+# .NET build artifacts
+**/bin/
+**/obj/
+**/.vs/
 
-/ChatServer/bin
-/ChatServer/.vs
-/ChatServer/obj
-/ChatServer/Properties
+# User-specific files
+*.user
+*.suo
+.DS_Store
