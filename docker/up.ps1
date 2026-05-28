@@ -1,1 +1,1 @@
-docker compose -f .\compose-db-projetos.yml up -d
+docker compose -f compose.yml up -d

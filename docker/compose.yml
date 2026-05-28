@@ -1,0 +1,19 @@
+name: servicos_mensageria
+
+services:
+  db-app-mensagens:
+    image: postgres:18
+    container_name: db-app-mensagens
+    environment:
+      POSTGRES_DB: app_mensagens
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+    ports:
+      - "5432:5432"
+    volumes:
+      - db-app-mensagens-data:/var/lib/postgresql
+      - ./.sql:/docker-entrypoint-initdb.d/init.sql:ro
+    restart: unless-stopped
+
+volumes:
+  db-app-mensagens-data:
