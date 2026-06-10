@@ -1,3 +1,4 @@
+using Chat.API.Dominio.Excecoes;
 using FluentValidation;
 using System.Net;
 using System.Text.Json;
@@ -16,6 +17,10 @@ public class ExceptionMiddleware(RequestDelegate next, ILogger<ExceptionMiddlewa
         {
             await EscrevaResposta(context, HttpStatusCode.BadRequest,
                 ex.Errors.Select(e => e.ErrorMessage));
+        }
+        catch (AplicacaoException ex)
+        {
+            await EscrevaResposta(context, HttpStatusCode.Conflict, [ex.Message]);
         }
         catch (Exception ex)
         {

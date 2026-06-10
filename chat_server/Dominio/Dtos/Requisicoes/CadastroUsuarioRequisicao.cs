@@ -1,3 +1,3 @@
 namespace Chat.API.Dominio.Dtos.Requisicoes;
 
-public record class CadastroUsuarioRequisicao(string Login, string Senha, string Nome) : IRequisicao;
+public record class CadastroUsuarioRequisicao(string Email, string Senha, string Nome) : IRequisicao;

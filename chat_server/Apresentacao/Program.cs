@@ -2,6 +2,7 @@ using Chat.API.Aplicacao.Extensoes;
 using Chat.API.Apresentacao.Endpoints;
 using Chat.API.Apresentacao.Hubs;
 using Chat.API.Apresentacao.Middlewares;
+using Chat.API.Apresentacao.Servicos;
 using Chat.API.Infraestrutura.Extensoes;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.Extensions.Primitives;
@@ -40,7 +41,9 @@ builder.Services
                 StringValues accessToken = context.Request.Query["access_token"];
 
                 if (!string.IsNullOrEmpty(accessToken))
+                {
                     context.Token = accessToken;
+                }
 
                 return Task.CompletedTask;
             }
@@ -49,13 +52,14 @@ builder.Services
 
 builder.Services.AddAuthorization();
 builder.Services.AddSignalR();
+builder.Services.AddSingleton<GeradorTokenJWT>();
 builder.Services.AdicioneDependenciasAplicacao();
-builder.Services.AdicioneDependenciasInfraestrutura();
+builder.Services.AdicioneDependenciasInfraestrutura(builder.Configuration);
 
 WebApplication app = builder.Build();
 
-app.UseMiddleware<ExceptionMiddleware>();
 app.UseSerilogRequestLogging();
+app.UseMiddleware<ExceptionMiddleware>();
 app.UseAuthentication();
 app.UseAuthorization();
 

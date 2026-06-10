@@ -8,8 +8,9 @@ public class ConsultaUsuarioRequisicaoValidador : AbstractValidator<ConsultaUsua
     public ConsultaUsuarioRequisicaoValidador()
     {
         RuleFor(x => x.Login)
-            .NotEmpty().WithMessage("O login é obrigatório.")
-            .MaximumLength(50).WithMessage("O login deve ter no máximo 50 caracteres.");
+            .NotEmpty().WithMessage("O e-mail é obrigatório.")
+            .EmailAddress().WithMessage("O e-mail informado é inválido.")
+            .MaximumLength(254).WithMessage("O e-mail deve ter no máximo 254 caracteres.");
 
         RuleFor(x => x.Senha)
             .NotEmpty().WithMessage("A senha é obrigatória.")

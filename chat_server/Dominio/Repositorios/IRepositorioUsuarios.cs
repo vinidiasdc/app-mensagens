@@ -4,7 +4,7 @@ namespace Chat.API.Dominio.Repositorios;
 
 public interface IRepositorioUsuarios : IRepositorio
 {
-    Usuario? ObtenhaUsuario(string login, string senha);
+    Task<Usuario?> ObtenhaUsuario(string email, string senha);
 
-    void CrieUsuario(string login, string nome, string senha);
+    Task CrieUsuario(string email, string nome, string senha);
 }
